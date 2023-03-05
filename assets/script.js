@@ -26,12 +26,12 @@ function quizTime() {
 
     var score = 0;
 
-    for (var i = 0; i < myQuestions.length; i++) {
+    /*for (var i = 0; i < myQuestions.length; i++) {
         var response = window.prompt(myQuestions[i].question);
         if (response == myQuestions[i].correctAnswer) {
             score++;
         }
-    }
+    } */
 }
 
 
@@ -41,7 +41,7 @@ startBtn.addEventListener('click', quizTime);
 
 //timer code 
  var counter = 60;
- 
+ function startTimer(){
  setInterval(function(){
     counter--;
     if(counter >=0){
@@ -49,4 +49,4 @@ startBtn.addEventListener('click', quizTime);
         id.innerHTML = counter;
     }
  }, 1000);
-
+ }
