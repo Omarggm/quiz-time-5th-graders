@@ -1,8 +1,3 @@
-//test to make sure javascript is linked properly
-console.log('Hello')
-
-var startBtn = document.querySelector("#start");
-
 //questions for the quiz
 function quizTime() {
     const myQuestions = [
@@ -21,32 +16,18 @@ function quizTime() {
             choices: ['Nucleus', 'Mitochondria', 'Plasma', 'Cell Wall'],
             correctAnswer: 2,
         }
-
     ]
-
-    var score = 0;
-
-    /*for (var i = 0; i < myQuestions.length; i++) {
-        var response = window.prompt(myQuestions[i].question);
-        if (response == myQuestions[i].correctAnswer) {
-            score++;
-        }
-    } */
-}
-
-
-//Event listner to button
-startBtn.addEventListener('click', quizTime);
-
+    var score = 0
+};
 
 //timer code 
- var counter = 60;
- function startTimer(){
- setInterval(function(){
-    counter--;
-    if(counter >=0){
-        id = document.getElementById('timer');
-        id.innerHTML = counter;
-    }
- }, 1000);
- }
+var counter = 60;
+function startTimer() {
+    setInterval(function () {
+        counter--;
+        if (counter >= 0) {
+            id = document.getElementById('timer');
+            id.innerHTML = counter;
+        }
+    }, 1000);
+};

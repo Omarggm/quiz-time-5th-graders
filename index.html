@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Quiz Time</title>
 </head>
 
@@ -14,10 +15,31 @@
         <p1 id="timer"></p1>
     </header>
     <main>
-        <p id="quizSection"></p>
-        <button id="start" type="button" onclick="startTimer()">Start Quiz</button>
+        <section id="quizSection">
+            <div class="quizHeading">
+                <h2 id="questinoaire">Question Section</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_answer">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_answer">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_answer">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_answer">Answer</label>
+                    </li>
+                </ul>
+            </div> 
+        </section>
+        <button id="start" type="button" onclick="startTimer();">Start Quiz</button>
     </main>
     <script src="assets/script.js"></script>
 </body>
-
 </html>
